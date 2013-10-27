@@ -2,7 +2,7 @@
   "name": "draft",
   "version": "0.0.1",
   "dependencies": {
-  		"socket.io":"0.4.3"
+  		"socket.io":"x.x.x"
   },
   "engines": {
     "node": "0.10.x",
