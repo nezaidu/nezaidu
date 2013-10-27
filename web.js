@@ -9,6 +9,7 @@ function handler(req,res){
   res.write('hi');
   res.end();
 }
+console.log('TESTIT!')
 io.configure(function () {
   io.set("transports", ["xhr-polling"]);
   io.set("polling duration", 10);
