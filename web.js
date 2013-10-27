@@ -9,6 +9,10 @@ function handler(req,res){
   res.write('hi');
   res.end();
 }
+io.configure(function () {
+  io.set("transports", ["xhr-polling"]);
+  io.set("polling duration", 10);
+});
 io.sockets.on('connection', function (socket) {
   on_connect(socket);
   clients[socket.id]=socket;
